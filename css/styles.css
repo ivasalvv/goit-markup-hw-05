@@ -251,6 +251,10 @@ img {
   margin-right: 120px;
 }
 
+.footer-net {
+  margin-right: 80px;
+}
+
 .subscribe-container {
 }
 
@@ -288,7 +292,7 @@ img {
 }
 
 .subscribe-input::placeholder {
-  color: var(--background-color;);
+  color: var(--background-color);
 }
 
 .subscribe-button {
@@ -297,7 +301,7 @@ img {
   height: 40px;
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -308,10 +312,17 @@ img {
   background-color: var(--logo-button-color);
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-icon {
   margin-left: 16px;
+  fill: var(--background-color);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--button-hover-color);
 }
 
 /*Main Studio - 1, Portfolio - 2*/
