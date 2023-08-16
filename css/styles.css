@@ -763,7 +763,6 @@ input {
 .modform-container {
   margin-bottom: 8px;
 }
-
 .modform-label {
   font-family: Roboto;
   font-size: 12px;
@@ -772,6 +771,8 @@ input {
   letter-spacing: 0.04em;
   text-align: left;
   color: var(--customers-color);
+  display: block;
+  margin-bottom: 4px;
 }
 
 .backdrop.is-hidden .modal {
@@ -810,4 +811,59 @@ input {
 .modal-button:hover .modal-icon,
 .modal-button:focus .modal-icon {
   fill: #ffffff;
+}
+
+.name-input {
+  position: relative;
+}
+
+.modform-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modform-input:hover,
+.modform-input:focus {
+  border-color: #4d5ae5;
+}
+
+.name-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--headers-color);
+}
+
+.name-icon:hover,
+.name-icon:focus {
+  fill: #4d5ae5;
+}
+
+.modform-textarea {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modform-textarea:hover,
+..modform-textarea:focus {
+  border-color: #4d5ae5;
 }
