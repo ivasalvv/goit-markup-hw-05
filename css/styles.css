@@ -763,6 +763,7 @@ input {
 .modform-container {
   margin-bottom: 8px;
 }
+
 .modform-label {
   font-family: Roboto;
   font-size: 12px;
@@ -830,21 +831,7 @@ input {
 
 .modform-input:hover,
 .modform-input:focus {
-  border-color: #4d5ae5;
-}
-
-.name-icon {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--headers-color);
-}
-
-.name-icon:hover,
-.name-icon:focus {
-  fill: #4d5ae5;
+  border-color: var(--logo-button-color);
 }
 
 .modform-textarea {
@@ -864,6 +851,46 @@ input {
 }
 
 .modform-textarea:hover,
-..modform-textarea:focus {
-  border-color: #4d5ae5;
+.modform-textarea:focus {
+  border-color: var(--logo-button-color);
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--headers-color);
+}
+
+.modform-input:hover .name-icon,
+.modform-input:focus .name-icon {
+  fill: var(--logo-button-color);
+}
+
+.textarea-container {
+  margin-bottom: 16px;
+}
+
+.checkbox-container {
+  margin-bottom: 24px;
+}
+
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--customers-color);
 }
